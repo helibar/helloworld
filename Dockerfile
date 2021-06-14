@@ -1,6 +1,6 @@
 FROM golang:alpine
 EXPOSE 8080
-ADD . .
 WORKDIR helloworld
+COPY /helloworld .
 CMD go run main.go
 
